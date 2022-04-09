@@ -3,27 +3,27 @@
     "lesson_1": [
       {
         "value": "",
-        "color": "red",
+        "color": "FireBrick",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "orange",
+        "color": "DarkOrange",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "yellow",
+        "color": "Gold",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "green",
+        "color": "SeaGreen",
         "quantity": 3
       }
     ],
@@ -35,22 +35,22 @@
       },
       {
         "value": "",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "orange",
+        "color": "DarkOrange",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "yellow",
+        "color": "Gold",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "green",
+        "color": "SeaGreen",
         "quantity": 3
       }
     ],
@@ -62,22 +62,22 @@
       },
       {
         "value": "",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "orange",
+        "color": "DarkOrange",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "yellow",
+        "color": "Gold",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "green",
+        "color": "SeaGreen",
         "quantity": 3
       }
     ],
@@ -89,22 +89,22 @@
       },
       {
         "value": "",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "orange",
+        "color": "DarkOrange",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "yellow",
+        "color": "Gold",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "green",
+        "color": "SeaGreen",
         "quantity": 3
       }
     ],
@@ -116,22 +116,22 @@
       },
       {
         "value": "",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "orange",
+        "color": "DarkOrange",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "yellow",
+        "color": "Gold",
         "quantity": 3
       },
       {
         "value": "",
-        "color": "green",
+        "color": "SeaGreen",
         "quantity": 3
       }
     ]
@@ -140,109 +140,109 @@
     "lesson_1": [
       {
         "value": "A",
-        "color": "yellow",
+        "color": "Gold",
         "quantity": 1
       },
       {
         "value": "B",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "F",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "M",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "P",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "S",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "T",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       }
     ],
     "lesson_2": [
       {
         "value": "A",
-        "color": "yellow",
+        "color": "Gold",
         "quantity": 1
       },
       {
         "value": "B",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "F",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "M",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "P",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "S",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "T",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "I",
-        "color": "yellow",
+        "color": "Gold",
         "quantity": 1
       },
       {
         "value": "C",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "G",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "H",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "L",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "N",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       },
       {
         "value": "R",
-        "color": "blue",
+        "color": "CornflowerBlue",
         "quantity": 1
       }
     ]
