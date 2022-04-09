@@ -1,0 +1,250 @@
+{
+  "chapter 1": {
+    "lesson 1": [
+      {
+        "value": "",
+        "color": "red",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "blue",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "orange",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "yellow",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "green",
+        "quantity": 3
+      }
+    ],
+    "lesson 2": [
+      {
+        "value": "",
+        "color": "red",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "blue",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "orange",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "yellow",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "green",
+        "quantity": 3
+      }
+    ],
+    "lesson 3": [
+      {
+        "value": "",
+        "color": "red",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "blue",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "orange",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "yellow",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "green",
+        "quantity": 3
+      }
+    ],
+    "lesson 4": [
+      {
+        "value": "",
+        "color": "red",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "blue",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "orange",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "yellow",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "green",
+        "quantity": 3
+      }
+    ],
+    "lesson 5": [
+      {
+        "value": "",
+        "color": "red",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "blue",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "orange",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "yellow",
+        "quantity": 3
+      },
+      {
+        "value": "",
+        "color": "green",
+        "quantity": 3
+      }
+    ]
+  },
+  "chapter 2": {
+    "lesson 1": [
+      {
+        "value": "A",
+        "color": "yellow",
+        "quantity": 1
+      },
+      {
+        "value": "B",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "F",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "M",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "P",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "S",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "T",
+        "color": "blue",
+        "quantity": 1
+      }
+    ],
+    "lesson 2": [
+      {
+        "value": "A",
+        "color": "yellow",
+        "quantity": 1
+      },
+      {
+        "value": "B",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "F",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "M",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "P",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "S",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "T",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "I",
+        "color": "yellow",
+        "quantity": 1
+      },
+      {
+        "value": "C",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "G",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "H",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "L",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "N",
+        "color": "blue",
+        "quantity": 1
+      },
+      {
+        "value": "R",
+        "color": "blue",
+        "quantity": 1
+      }
+    ]
+  }
+}
