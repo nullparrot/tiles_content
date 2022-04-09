@@ -1,6 +1,6 @@
 {
-  "chapter_1": {
-    "lesson_1": [
+  "1": {
+    "1": [
       {
         "value": "",
         "color": "FireBrick",
@@ -27,10 +27,10 @@
         "quantity": 3
       }
     ],
-    "lesson_2": [
+    "2": [
       {
         "value": "",
-        "color": "red",
+        "color": "FireBrick",
         "quantity": 3
       },
       {
@@ -54,10 +54,10 @@
         "quantity": 3
       }
     ],
-    "lesson_3": [
+    "3": [
       {
         "value": "",
-        "color": "red",
+        "color": "FireBrick",
         "quantity": 3
       },
       {
@@ -81,10 +81,10 @@
         "quantity": 3
       }
     ],
-    "lesson_4": [
+    "4": [
       {
         "value": "",
-        "color": "red",
+        "color": "FireBrick",
         "quantity": 3
       },
       {
@@ -108,10 +108,10 @@
         "quantity": 3
       }
     ],
-    "lesson_5": [
+    "5": [
       {
         "value": "",
-        "color": "red",
+        "color": "FireBrick",
         "quantity": 3
       },
       {
@@ -136,8 +136,8 @@
       }
     ]
   },
-  "chapter_2": {
-    "lesson_1": [
+  "2": {
+    "1": [
       {
         "value": "A",
         "color": "Gold",
@@ -174,7 +174,7 @@
         "quantity": 1
       }
     ],
-    "lesson_2": [
+    "2": [
       {
         "value": "A",
         "color": "Gold",
