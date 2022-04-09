@@ -1,6 +1,6 @@
 {
-  "chapter 1": {
-    "lesson 1": [
+  "chapter_1": {
+    "lesson_1": [
       {
         "value": "",
         "color": "red",
@@ -27,7 +27,7 @@
         "quantity": 3
       }
     ],
-    "lesson 2": [
+    "lesson_2": [
       {
         "value": "",
         "color": "red",
@@ -54,7 +54,7 @@
         "quantity": 3
       }
     ],
-    "lesson 3": [
+    "lesson_3": [
       {
         "value": "",
         "color": "red",
@@ -81,7 +81,7 @@
         "quantity": 3
       }
     ],
-    "lesson 4": [
+    "lesson_4": [
       {
         "value": "",
         "color": "red",
@@ -108,7 +108,7 @@
         "quantity": 3
       }
     ],
-    "lesson 5": [
+    "lesson_5": [
       {
         "value": "",
         "color": "red",
@@ -136,8 +136,8 @@
       }
     ]
   },
-  "chapter 2": {
-    "lesson 1": [
+  "chapter_2": {
+    "lesson_1": [
       {
         "value": "A",
         "color": "yellow",
@@ -174,7 +174,7 @@
         "quantity": 1
       }
     ],
-    "lesson 2": [
+    "lesson_2": [
       {
         "value": "A",
         "color": "yellow",
