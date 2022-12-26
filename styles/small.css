@@ -53,8 +53,10 @@ header
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
-    height: 130px;
+    min-height: 100px;
+    max-height: 150px;
     width: 100%;
+    background-color: #444;
 }
 
 .tileButton{
