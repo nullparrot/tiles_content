@@ -1,3 +1,8 @@
+function clearWhiteboard(){
+  let whiteboard = document.getElementById('whiteboard')
+  whiteboard.innerHTML = ''
+}
+
 function makeMoveables(moveID, divID) {
     var dragItem = document.getElementById(moveID);
     var container = document.getElementById(divID);
@@ -60,15 +65,6 @@ function makeMoveables(moveID, divID) {
       el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
     }
   }
-  
-  /* makes all elements with given class name movable if they have unique ids*/
-  function findMoveables(className, divID) {
-    let moveIDcollection = document.getElementsByClassName(className);
-    let moveIDarray = Array.from(moveIDcollection);
-    moveIDarray.forEach((element) => {
-      makeMoveables(element.id, divID);
-    });
-  }
 
 function makeTile(color,value){
     let newTile = document.createElement('p')
@@ -77,7 +73,7 @@ function makeTile(color,value){
     newTile.setAttribute('id',`${color}-${tileCount}`)
     tileCount+=1
     document.getElementById('whiteboard').appendChild(newTile)
-    findMoveables('dragMe','whiteboard')
+    makeMoveables(newTile.id, 'whiteboard')
 }
 
 function tileMenuBuild() {
@@ -122,6 +118,51 @@ function initialMenuBuild() {
     levelMenu.appendChild(newOption);
   });
   lessonMenuBuild();
+}
+
+function fullscreen() {
+  content = document.querySelector('body');
+  if (
+    document.fullscreenElement ||
+    document.mozFullScreenElement ||
+    document.webkitFullscreenElement
+  ) {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+      document.getElementById("fullscreen").innerHTML = "Max";
+      full = false;
+    } else {
+      if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+        document.getElementById("fullscreen").innerHTML = "Max";
+        full = false;
+      } else {
+        if (document.webkitCancelFullScreen) {
+          document.webkitCancelFullScreen();
+          document.getElementById("fullscreen").innerHTML = "Max";
+          full = false;
+        }
+      }
+    }
+  } else {
+    if (content.requestFullscreen) {
+      content.requestFullscreen();
+      document.getElementById("fullscreen").innerHTML = "Min";
+      full = true;
+    } else {
+      if (content.mozRequestFullScreen) {
+        content.mozRequestFullScreen();
+        document.getElementById("fullscreen").innerHTML = "Min";
+        full = true;
+      } else {
+        if (content.webkitRequestFullscreen) {
+          content.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+          document.getElementById("fullscreen").innerHTML = "Min";
+          full = true;
+        }
+      }
+    }
+  }
 }
 
 var level = 1;

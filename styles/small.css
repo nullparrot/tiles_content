@@ -1,4 +1,4 @@
-html {
+html, body{
   background-color: #333;
   font-family: 'Open Sans', sans-serif;
 }
@@ -31,10 +31,10 @@ body {
 
 #main-menu{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px 1fr 1fr 200px;
 }
 
-select{
+#main-menu select, #main-menu button{
     font-size: 20px;
     font-style: none;
     text-align: center;
@@ -42,6 +42,15 @@ select{
     border: 1px #333 solid;
     border-radius: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+/*
+#main-menu button:active{
+  background-color: #EEE;
+}*/
+
+button:active{
+  filter: brightness(80%);
 }
 
 #tile-menu{
