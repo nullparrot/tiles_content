@@ -1,3 +1,85 @@
+function makeMoveables(moveID, divID) {
+    var dragItem = document.getElementById(moveID);
+    var container = document.getElementById(divID);
+  
+    var active = false;
+    var currentX;
+    var currentY;
+    var initialX;
+    var initialY;
+    var xOffset = 0;
+    var yOffset = 0;
+  
+    container.addEventListener("touchstart", dragStart, false);
+    container.addEventListener("touchend", dragEnd, false);
+    container.addEventListener("touchmove", drag, false);
+  
+    container.addEventListener("mousedown", dragStart, false);
+    container.addEventListener("mouseup", dragEnd, false);
+    container.addEventListener("mousemove", drag, false);
+  
+    function dragStart(e) {
+      if (e.type === "touchstart") {
+        initialX = e.touches[0].clientX - xOffset;
+        initialY = e.touches[0].clientY - yOffset;
+      } else {
+        initialX = e.clientX - xOffset;
+        initialY = e.clientY - yOffset;
+      }
+  
+      if (e.target === dragItem) {
+        active = true;
+      }
+    }
+  
+    function dragEnd(e) {
+      initialX = currentX;
+      initialY = currentY;
+      active = false;
+    }
+  
+    function drag(e) {
+      if (active) {
+        e.preventDefault();
+        if (e.type === "touchmove") {
+          currentX = e.touches[0].clientX - initialX;
+          currentY = e.touches[0].clientY - initialY;
+        } else {
+          currentX = e.clientX - initialX;
+          currentY = e.clientY - initialY;
+        }
+  
+        xOffset = currentX;
+        yOffset = currentY;
+  
+        setTranslate(currentX, currentY, dragItem);
+      }
+    }
+  
+    function setTranslate(xPos, yPos, el) {
+      el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+    }
+  }
+  
+  /* makes all elements with given class name movable if they have unique ids*/
+  function findMoveables(className, divID) {
+    let moveIDcollection = document.getElementsByClassName(className);
+    let moveIDarray = Array.from(moveIDcollection);
+    moveIDarray.forEach((element) => {
+      makeMoveables(element.id, divID);
+    });
+  }
+
+function makeTile(color,value){
+    let newTile = document.createElement('p')
+    newTile.innerHTML = value
+    newTile.setAttribute('class',`tile ${color} dragMe`)
+    newTile.setAttribute('id',`${color}-${tileCount}`)
+    tileCount+=1
+    document.getElementById('whiteboard').appendChild(newTile)
+    findMoveables('dragMe','whiteboard')
+}
+
 function tileMenuBuild() {
   let lessonMenu = document.getElementById("lesson");
   lesson = parseInt(lessonMenu.value);
@@ -28,7 +110,7 @@ function lessonMenuBuild() {
     lessonMenu.appendChild(newOption);
   }
   lesson = 1;
-  tileMenuBuild();
+  //tileMenuBuild();
 }
 
 function initialMenuBuild() {
@@ -46,6 +128,7 @@ var level = 1;
 var lesson = 1;
 var tiles = {};
 var books = {};
+var tileCount = 0
 
 fetch("./content/tiles.json")
   .then((tilesJSON) => {
@@ -54,8 +137,6 @@ fetch("./content/tiles.json")
   .then((tilesContent) => {
     tiles = tilesContent.tiles;
     books = tilesContent.books;
-    //console.table(books)
-    console.table(tiles);
     initialMenuBuild();
   });
 

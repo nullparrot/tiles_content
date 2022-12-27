@@ -1,15 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Squares</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/small.css" />
-</head>
-<body>
-    <header><div id="main-menu"><select name="level" id="level"></select><select name="lesson" id="lesson"></select></div><div id="tile-menu"></div></header>
-    <main><h1>Main</h1></main>
+  </head>
+
+  <body>
+    <header>
+      <div id="main-menu">
+        <select name="level" id="level"></select
+        ><select name="lesson" id="lesson"></select>
+      </div>
+      <div id="tile-menu">
+        <section id="blank-buttons">
+          <h3>Blanks</h3>
+          <button type="button" onclick="makeTile('FireBrick','')" class="tileButton FireBrick blank" value="tileButton FireBrick blank"></button>
+          <button type="button" onclick="makeTile('DarkOrange','')" class="tileButton DarkOrange blank" value="tileButton DarkOrange blank"></button>
+          <button type="button" onclick="makeTile('Gold','')" class="tileButton Gold blank" value="tileButton Gold blank"></button><br>
+          <button type="button" onclick="makeTile('SeaGreen','')" class="tileButton SeaGreen blank" value="tileButton SeaGreen blank"></button>
+          <button type="button" onclick="makeTile('CornflowerBlue','')" class="tileButton CornflowerBlue blank" value="tileButton CornflowerBlue blank"></button>
+        </section>
+        <section>
+          <h3 id="prefix-buttons">Prefixes</h3>
+          <button type="button" onclick="makeTile('DarkOrange','dis')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">dis</button>
+          <button type="button" onclick="makeTile('DarkOrange','in')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">in</button>
+          <button type="button" onclick="makeTile('DarkOrange','un')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">un</button>
+          <button type="button" onclick="makeTile('DarkOrange','non')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">non</button>
+          <button type="button" onclick="makeTile('DarkOrange','mis')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">mis</button>
+          <button type="button" onclick="makeTile('DarkOrange','sub')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">sub</button>
+          <button type="button" onclick="makeTile('DarkOrange','re')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">re</button>
+          <br>
+          <button type="button" onclick="makeTile('DarkOrange','pre')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">pre</button>
+          <button type="button" onclick="makeTile('DarkOrange','inter')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">inter</button>
+          <button type="button" onclick="makeTile('DarkOrange','mid')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">mid</button>
+          <button type="button" onclick="makeTile('DarkOrange','over')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">over</button>
+          <button type="button" onclick="makeTile('DarkOrange','up')" class="tileButton DarkOrange prefix" value="tileButton DarkOrange prefix">up</button>
+        </section>
+        <section>
+          <h3>Suffixes</h3>
+          <button type="button" onclick="makeTile('SeaGreen','s')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">s</button
+          ><button type="button" onclick="makeTile('SeaGreen','es')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">es</button
+          ><button type="button" onclick="makeTile('SeaGreen','ful')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ful</button
+          ><button type="button" onclick="makeTile('SeaGreen','ly')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ly</button
+          ><button type="button" onclick="makeTile('SeaGreen','less')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">less</button
+          ><button type="button" onclick="makeTile('SeaGreen','ness')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ness</button
+          ><button type="button" onclick="makeTile('SeaGreen','ment')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ment</button
+          ><button type="button" onclick="makeTile('SeaGreen','ed')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ed</button
+          ><button type="button" onclick="makeTile('SeaGreen','ing')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ing</button
+          ><button type="button" onclick="makeTile('SeaGreen','er')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">er</button
+          ><br><button type="button" onclick="makeTile('SeaGreen','est')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">est</button
+          ><button type="button" onclick="makeTile('SeaGreen','ist')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ist</button
+          ><button type="button" onclick="makeTile('SeaGreen','y')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">y</button
+          ><button type="button" onclick="makeTile('SeaGreen','en')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">en</button
+          ><button type="button" onclick="makeTile('SeaGreen','ish')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ish</button
+          ><button type="button" onclick="makeTile('SeaGreen','able')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">able</button
+          ><button type="button" onclick="makeTile('SeaGreen','ity')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ity</button
+          ><button type="button" onclick="makeTile('SeaGreen','al')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">al</button
+          ><button type="button" onclick="makeTile('SeaGreen','ous')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ous</button
+          ><button type="button" onclick="makeTile('SeaGreen','ize')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ize</button
+          ><button type="button" onclick="makeTile('SeaGreen','ic')" class="tileButton SeaGreen suffix" value="tileButton SeaGreen suffix">ic</button>
+        </section>
+        <section>
+          <h3>Vowel Teams</h3>
+          <button type="button" onclick="makeTile('Gold','')" class="tileButton Gold vowel-team" value="tileButton Gold vowel-team">ai</button
+          ><button type="button" onclick="makeTile('Gold','')" class="tileButton Gold vowel-team" value="tileButton Gold vowel-team">ay</button
+          ><button type="button" onclick="makeTile('Gold','')" class="tileButton Gold vowel-team" value="tileButton Gold vowel-team">ee</button
+          ><button type="button" onclick="makeTile('Gold','')" class="tileButton Gold vowel-team" value="tileButton Gold vowel-team">oa</button
+          ><button type="button" onclick="makeTile('Gold','')" class="tileButton Gold vowel-team" value="tileButton Gold vowel-team">oe</button
+          ><br><button type="button" onclick="makeTile('Gold','')" class="tileButton Gold vowel-team" value="tileButton Gold vowel-team">ow</button
+          ><button type="button" onclick="makeTile('Gold','')" class="tileButton Gold vowel-team" value="tileButton Gold vowel-team">ew</button
+          ><button type="button" onclick="makeTile('Gold','')" class="tileButton Gold vowel-team" value="tileButton Gold vowel-team">ue</button>
+        </section>
+        <section>
+          <h3>Vowels</h3>
+          <button type="button" onclick="makeTile('Gold','a')" class="tileButton Gold vowel" value="tileButton Gold vowel">a</button
+          ><button type="button" onclick="makeTile('Gold','e')" class="tileButton Gold vowel" value="tileButton Gold vowel">e</button
+          ><button type="button" onclick="makeTile('Gold','i')" class="tileButton Gold vowel" value="tileButton Gold vowel">i</button
+          ><button type="button" onclick="makeTile('Gold','o')" class="tileButton Gold vowel" value="tileButton Gold vowel">o</button
+          ><br><button type="button" onclick="makeTile('Gold','u')" class="tileButton Gold vowel" value="tileButton Gold vowel">u</button
+          ><button type="button" onclick="makeTile('Gold','y')" class="tileButton Gold vowel" value="tileButton Gold vowel">y</button
+          ><button type="button" onclick="makeTile('Gold','Ə')" class="tileButton Gold vowel" value="tileButton Gold vowel">Ə</button>
+        </section>
+        <section>
+          <h3>Consonants</h3>
+          <button type="button" onclick="makeTile('CornflowerBlue','b')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">b</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','c')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">c</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','d')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">d</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','f')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">f</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','g')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">g</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','h')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">h</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','j')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">j</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','k')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">k</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','l')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">l</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','m')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">m</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','n')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">n</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','p')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">p</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','qu')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">qu</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','r')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">r</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','s')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">s</button
+          ><br><button type="button" onclick="makeTile('CornflowerBlue','t')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">t</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','v')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">v</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','w')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">w</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','x')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">x</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','y')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">y</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','z')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">z</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','ch')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">ch</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','th')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">th</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','ck')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">ck</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','sh')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">sh</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','wh')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">wh</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','tch')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">tch</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','dge')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">dge</button
+          ><button type="button" onclick="makeTile('CornflowerBlue','ph')" class="tileButton CornflowerBlue consonant" value="tileButton CornflowerBlue consonant">ph</button>
+        </section>
+        <section>
+          <h3>Symbols</h3>
+          <button type="button" onclick="makeTile('SeaGreen','`')" class="tileButton SeaGreen symbol" value="tileButton SeaGreen symbol">`</button>
+        </section>
+        <section>
+          <h3>Units</h3>
+          <button type="button" onclick="makeTile('FireBrick','all')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">all</button
+          ><button type="button" onclick="makeTile('FireBrick','ang')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ang</button
+          ><button type="button" onclick="makeTile('FireBrick','ing')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ing</button
+          ><button type="button" onclick="makeTile('FireBrick','ong')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ong</button
+          ><button type="button" onclick="makeTile('FireBrick','ung')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ung</button
+          ><button type="button" onclick="makeTile('FireBrick','ank')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ank</button
+          ><button type="button" onclick="makeTile('FireBrick','ink')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ink</button
+          ><button type="button" onclick="makeTile('FireBrick','onk')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">onk</button
+          ><button type="button" onclick="makeTile('FireBrick','unk')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">unk</button
+          ><button type="button" onclick="makeTile('FireBrick','oll')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">oll</button
+          ><button type="button" onclick="makeTile('FireBrick','old')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">old</button
+          ><button type="button" onclick="makeTile('FireBrick','olt')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">olt</button
+          ><button type="button" onclick="makeTile('FireBrick','ost')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ost</button
+          ><button type="button" onclick="makeTile('FireBrick','ild')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ild</button
+          ><button type="button" onclick="makeTile('FireBrick','ind')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ind</button
+          ><br><button type="button" onclick="makeTile('FireBrick','tion')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">tion</button
+          ><button type="button" onclick="makeTile('FireBrick','sion')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">sion</button
+          ><button type="button" onclick="makeTile('FireBrick','ive')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ive</button
+          ><button type="button" onclick="makeTile('FireBrick','ture')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ture</button
+          ><button type="button" onclick="makeTile('FireBrick','ice')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ice</button
+          ><button type="button" onclick="makeTile('FireBrick','ace')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ace</button
+          ><button type="button" onclick="makeTile('FireBrick','age')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">age</button
+          ><button type="button" onclick="makeTile('FireBrick','ate')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ate</button
+          ><button type="button" onclick="makeTile('FireBrick','ite')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ite</button
+          ><button type="button" onclick="makeTile('FireBrick','ine')" class="tileButton FireBrick unit" value="tileButton FireBrick unit">ine</button>
+        </section>
+      </div>
+    </header>
+    <main>
+      <div id="whiteboard">
+
+      </div>
+    </main>
     <script src="scripts/worker.js"></script>
-</body>
+  </body>
 </html>
