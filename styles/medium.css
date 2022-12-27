@@ -1,0 +1,9 @@
+@media screen and (min-width: 500px) {
+    #main-menu{
+        grid-template-columns: 100px 1fr 1fr 125px;
+    }
+
+    #main-menu select{
+        grid-row: initial;
+      }
+}

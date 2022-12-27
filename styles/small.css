@@ -29,9 +29,17 @@ body {
   margin: 0;
 }
 
+header{
+  width: 100%;
+}
+
 #main-menu{
     display: grid;
-    grid-template-columns: 100px 1fr 1fr 200px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main-menu select{
+  grid-row: 1;
 }
 
 #main-menu select, #main-menu button{
